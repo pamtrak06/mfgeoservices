@@ -64,9 +64,9 @@ loadWmsmapLeaflet = (function(url, layer, style, time, reftime, format, bounds, 
         transparent: transparent,
         version: "1.3.0",
         attribution: "Source: Meteo-France",
-        onEachFeature: function (feature, layer) {
+        /*onEachFeature: function (feature, layer) {
         	layer.options.zIndex = feature.id + 10;
-        }
+        }*/
     }).addTo(map);
 
     L.wmsLegend(uri);
@@ -105,8 +105,8 @@ addGeojsonTomapLeaflet = (function(key) {
     style: {
     	opacity: 0.5
     },
-    onEachFeature: function (feature, layer) {
+    /*onEachFeature: function (feature, layer) {
     	layer.options.zIndex = feature.id + 20;
-    }
+    }*/
   }).addTo(map);
 });
